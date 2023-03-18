@@ -1,5 +1,13 @@
 function isPalindrome(word) {
+
+  for (let i = 0; i < word.length / 2; i++) {
+    const j = word.length - 1 - i;
+    if (word[i] !== word[j]) return false;
+  }
   // Write your algorithm here
+  // if a first letter of a word equils the last letter and so on then returns true 
+  // if first letter does not equil the last letter then return false 
+return true;
 }
 
 /* 
